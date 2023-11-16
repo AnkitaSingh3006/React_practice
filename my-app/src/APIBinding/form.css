@@ -1,0 +1,52 @@
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    border: 2px solid rgb(243, 244, 243);
+    background-color: #f2f2f2;
+}
+
+.form {
+    font-family: Arial, Roboto, sans-serif;
+    font-size: 28px;
+    width: 40%;
+    height: 48%;
+    position: relative;
+    top: 25%;
+    left: 30%;
+    padding: 2%;
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    color: #7e7e7e;
+
+}
+
+.input {
+    height: 40px;
+    width: 90%;
+    padding: 10px;
+    font-size: 15px;
+    color: #8ebf42;
+    margin: 3% 0;
+    border: 2px outset #8ebf42 ;
+    outline:none;
+}
+
+hr {
+    margin: 10px 0;
+    border: 1px solid #8ebf42;
+}
+
+.btn {
+    width: 50%;
+    height: 43px;
+    font-size: 20px;
+    color: white;
+    background-color: #8ebf42;
+    border: none;
+    border-radius: 17px;
+    margin: 8% 0;
+    cursor: progress;
+}
+
