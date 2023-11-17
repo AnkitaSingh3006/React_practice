@@ -12,7 +12,7 @@ const MyForm = () => {
 
     const [errors, setError] = useState({});
 
-    // const navigate = useNavigate()
+    const navigate = useNavigate()
 
     const handleChange = (event) => {
         // console.log(event);
@@ -32,13 +32,17 @@ const MyForm = () => {
                 password: formInputs.password
             })
                 .then(result => {
-                    console.log(result);
-                    localStorage.setItem('token', result.data.token)
-                    // alert("Login Success");
-                    toast.success("Login Success!", {
-                        position: "top-center"
-                    });
-                    // navigate('/users');
+                    if (result.status === 200) { 
+                        console.log(result);
+                        localStorage.setItem('token', result.data.token);
+                        console.log("Login Success");
+                        setTimeout(() => {
+                            toast.success("Login Success!", {
+                                position: "top-center"
+                            });
+                            navigate('/users');
+                        }, 1000); 
+                    }
                 })
                 .catch(error => {
                     toast.error(error.message, {

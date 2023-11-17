@@ -47,6 +47,6 @@ hr {
     border: none;
     border-radius: 17px;
     margin: 8% 0;
-    cursor: progress;
+    cursor: pointer;
 }
 
