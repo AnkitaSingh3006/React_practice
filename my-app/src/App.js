@@ -9,9 +9,9 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          {/* <Route exact path="/" element={localStorage.getItem('token') != null ? <Users/> : <MyForm/>}/> */}
-          <Route path="/" element={<MyForm/>} />
-          <Route path="/users" element={<Users/>} />
+          <Route exact path="/" element={localStorage.getItem('token') != null ? <Users/> : <MyForm/>}/>
+          <Route path="/" element={<MyForm />} />
+          <Route path="/users" element={<Users />} />
         </Routes>
       </Router>
     </div>

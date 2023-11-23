@@ -29,8 +29,8 @@
     font-size: 15px;
     color: #8ebf42;
     margin: 3% 0;
-    border: 2px outset #8ebf42 ;
-    outline:none;
+    border: 2px outset #8ebf42;
+    outline: none;
 }
 
 hr {
@@ -49,4 +49,3 @@ hr {
     margin: 8% 0;
     cursor: pointer;
 }
-

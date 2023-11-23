@@ -22,6 +22,7 @@ const Users = () => {
     const handleLogout = () => {
         console.log("logout");
         navigate('/');
+        localStorage.removeItem("token")
     }
 
     useEffect(() => {
